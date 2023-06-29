@@ -1,6 +1,6 @@
 import { Image as ChakraImage } from "@chakra-ui/react";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import catImageRaw from "../assets/cat_nekoko_hansei.png";
+import catImageRaw from "../assets/hansei_cat.png";
 import {
   BoardPositionByPercent,
   boardPositionByPercent,
