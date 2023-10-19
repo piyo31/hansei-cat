@@ -1,6 +1,6 @@
 import { Image as ChakraImage } from "@chakra-ui/react";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import catImageRaw from "../assets/hansei_cat.png";
+import catImageRaw from "../assets/hansei_cat.jpg";
 import {
   BoardPositionByPercent,
   boardPositionByPercent,
@@ -44,6 +44,18 @@ const drawText = (
     const centeringSpaceHorizontal =
       (boardWidth - getTextRenderingWidth(text, fontSize, context)) / 2;
 
+    // 縁取りの太さ
+    context.lineWidth = 16;
+    context.strokeStyle = "#000000";
+    context.strokeText(
+      text,
+      width * positionByPercent.upperLeft.x + centeringSpaceHorizontal,
+      height * positionByPercent.upperLeft.y +
+        centeringSpaceVertical +
+        fontSize * index -
+        (defaultFontSize - fontSize)
+    );
+    context.fillStyle = "#ffffff";
     context.fillText(
       text,
       width * positionByPercent.upperLeft.x + centeringSpaceHorizontal,
@@ -71,7 +83,7 @@ const createCanvasElement = (image: HTMLImageElement): HTMLCanvasElement => {
   return elem;
 };
 
-const defaultFontSize = 28;
+const defaultFontSize = 48;
 
 type Props = {
   word: string;

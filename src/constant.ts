@@ -12,12 +12,12 @@ export type BoardPositionByPercent = {
 export const boardPositionByPercent = {
   CAT_HANSEI: {
     upperLeft: {
-      x: 0.27,
-      y: 0.77,
+      x: 363 / 1024,
+      y: 607 / 1024,
     },
     bottomRight: {
-      x: 0.64,
-      y: 0.9,
+      x: 661 / 1024,
+      y: 950 / 1024,
     },
   },
 };
