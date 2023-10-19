@@ -22,4 +22,4 @@ export const boardPositionByPercent = {
   },
 };
 
-export const FONT = "Hiragino Maru Gothic Pro";
+export const FONT = "Mochiy Pop One";

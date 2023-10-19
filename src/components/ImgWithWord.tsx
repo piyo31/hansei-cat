@@ -45,7 +45,7 @@ const drawText = (
       (boardWidth - getTextRenderingWidth(text, fontSize, context)) / 2;
 
     // 縁取りの太さ
-    context.lineWidth = 16;
+    context.lineWidth = 10;
     context.strokeStyle = "#000000";
     context.strokeText(
       text,
