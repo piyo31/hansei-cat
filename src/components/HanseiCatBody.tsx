@@ -13,7 +13,10 @@ const HanseiCat = () => {
             </Text>
             <Flex flexDirection="column" alignItems="center" gridGap={2}>
               <Text textAlign="center">
-                反省したいことを入力すると､猫が反省している画像が生成されます
+                反省したいことを入力
+                <br />↓<br />
+                「生成する」ボタンをクリック <br />↓<br />
+                猫が反省している画像が生成されます
               </Text>
             </Flex>
           </CardBody>
