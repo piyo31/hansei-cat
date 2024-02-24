@@ -30,8 +30,8 @@ const ImgWithWordInput = () => {
           <Textarea
             value={word}
             onChange={(event) => {
-              setWord(event.target.value);
-              isRealTime && setWordWithImage(word);
+              setWord(() => event.target.value);
+              isRealTime && setWordWithImage(() => event.target.value);
             }}
             placeholder="反省したいこと"
           />
